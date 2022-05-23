@@ -3,15 +3,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
-import Nav from './Nav'
+import NavContextProvider from './hooks/NavHook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
-    <Nav />
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<App />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <NavContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={ <App /> } />
+        </Routes>
+      </BrowserRouter>
+    </NavContextProvider>
   </React.StrictMode>
 );

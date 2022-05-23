@@ -1,13 +1,18 @@
-
+import { Route, Routes } from "react-router-dom"
+import Nav from './components/Nav'
+import Index from './components/Index'
 
 function App() {
   return (
-    <div className='flex xsm:flex-col md:flex-row'>
-      <div className='bg-cyan-500 h-screen w-full'>
-      a
-      </div>
+    <div>
+      <Nav/>
+      <Routes>
+        <Route path="/" element={ <Index/> }/>
+      </Routes>
     </div>
   )
 }
+
+
 
 export default App
