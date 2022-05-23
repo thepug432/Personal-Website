@@ -11,10 +11,15 @@ export default function NavMenu() {
         transition={{ duration: .3 }}
         className="absolute bg-red-600 right-0 top-10 opacity-90 w-screen h-screen flex xsm:block">
             <div className="flex flex-col bg-red-700">
-                <NavLink title={'Home'} to={'/'} overmsg={'Go home'}/>
-                <NavLink title={'Resume'} to={'resume'} overmsg={'See my resume'}/>
-                <NavLink title={'Projects'} to={'projects'} overmsg={'See my projects'}/>
-                <NavLink title={'Github'} to={'github'} overmsg={'Go to my Github'}/>
+                <motion.div 
+                initial={{ y: -300 }}
+                animate={{ y: -0 }}
+                transition={{ delay: .3, duration: .3 }}>
+                    <NavLink title={'Home'} to={'/'} overmsg={'Go home'}/>
+                    <NavLink title={'Resume'} to={'resume'} overmsg={'See my resume'}/>
+                    <NavLink title={'Projects'} to={'projects'} overmsg={'See my projects'}/>
+                    <NavLink title={'Github'} to={'github'} overmsg={'Go to my Github'}/>
+                </motion.div>
             </div>
             <div className="mx-auto mt-52 xsm:m-0">
                 <NavInfo />

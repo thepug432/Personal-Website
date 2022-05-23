@@ -9,7 +9,11 @@ export default function NavInfo() {
     }
 
     return(
-        <div className="bg-red-700 text-white p-10 rounded">
+        <motion.div 
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: .3, duration: .2 }}
+        className="bg-red-700 text-white p-10 rounded">
             <h1 className="text-4xl ml-2">Contact me directly!</h1>
             <div className="relative">
                 <motion.div 
@@ -35,6 +39,6 @@ export default function NavInfo() {
                     }
                 </AnimatePresence>
             </div>
-        </div>  
+        </motion.div>  
     )
 }
