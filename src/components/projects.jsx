@@ -1,10 +1,16 @@
+import { motion } from "framer-motion"
 import Project from "./projects/project"
 import WarframeSite from '../static/images/WarframeSite.png'
 import UsStats from '../static/images/USstats.png'
+import Hider from "./Hider"
 
 export default function Projects() {
     return(
-        <div className="h-screen-without-nav bg-red-500 flex flex-col">
+        <Hider>
+        <motion.div 
+        initial={{ opacity:0 }}
+        animate={{ opacity:1 }}
+        className="h-screen-without-nav bg-red-500 flex flex-col">
             <Project 
                 title={'Warframe API Parser'}
                 description={'This project parses the warframe api using it to produce a website.'}
@@ -19,6 +25,7 @@ export default function Projects() {
                 Sitelink={'https://uspopulationtracker.netlify.app/'}
                 Githublink={'https://github.com/thepug432/USPopulation'}
             />
-        </div>
+        </motion.div>
+        </Hider>
     )
 }
