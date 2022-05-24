@@ -6,7 +6,7 @@ export default function Project({ title, description, Sitelink, Githublink, imag
     const [hover, setHover] = useState(false)
 
     return(
-        <div className="mt-2 text-white flex">
+        <div className="mt-2 text-white flex px-5 bg-red-500">
             <div className="mx-auto relative"
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}

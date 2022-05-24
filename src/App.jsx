@@ -5,7 +5,7 @@ import Projects from "./components/projects"
 
 function App() {
   return (
-    <div className="bg-red-400">
+    <div className="bg-red-500">
       <Nav/>
       <Routes>
         <Route path="/" element={ <Index/> }/>
