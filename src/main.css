@@ -16,7 +16,6 @@
 }
 
 .back{
-    background-image: url('static/images/back.gif');
     background-attachment: fixed; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -25,7 +24,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+.index{
+    background-image: url('static/images/back.gif');
+}
 
-.h-index-screen{
+.h-screen-without-nav{
     height: calc(100vh - 3rem);
 }
