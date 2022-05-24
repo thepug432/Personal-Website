@@ -5,7 +5,7 @@ import Examples from './index/Example'
 
 export default function Idex() {
   return (
-    <div className='back h-screen'>
+    <div className='back h-index-screen'>
       <Hider>
         <div className="flex flex-col">
           {/* main content */}
