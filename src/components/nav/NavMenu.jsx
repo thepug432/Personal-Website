@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import NavLink from './NavLink'
 import NavInfo from './NavInfo'
+import A from "./A"
 
 export default function NavMenu() {
     return(
@@ -18,7 +19,7 @@ export default function NavMenu() {
                     <NavLink title={'Home'} to={'/'} overmsg={'Go home'}/>
                     <NavLink title={'Resume'} to={'resume'} overmsg={'See my resume'}/>
                     <NavLink title={'Projects'} to={'projects'} overmsg={'See my projects'}/>
-                    <NavLink title={'Github'} to={'github'} overmsg={'Go to my Github'}/>
+                    <A title={'Github'} to={'https://github.com/thepug432/'} overmsg={'Go to my Github'}/>
                 </motion.div>
             </div>
             <div className="mx-auto mt-52 xsm:m-0">
