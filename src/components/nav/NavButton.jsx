@@ -24,7 +24,7 @@ export default function NavButton({open, changeOpen}) {
                     animate={{ scale: 1 }}
                     transition={{ duration: .3 }}
                     variants={variants}
-                    className='absolute left-2 my-auto top-0 text-white'
+                    className='absolute left-2 my-auto top-0 text-white cursor-pointer'
                     style={{ fill:'white' }}
                     >
                         <IoMdClose size={30}/>
@@ -38,7 +38,7 @@ export default function NavButton({open, changeOpen}) {
                     animate={{ scale: 1}}
                     transition={{ duration: .3 }}
                     variants={variants}
-                    className='absolute left-2 my-auto top-0 text-white'
+                    className='absolute left-2 my-auto top-0 text-white cursor-pointer'
                     >
                         <FiMenu size={30}/>
                     </motion.div>

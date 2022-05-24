@@ -6,8 +6,8 @@ export default function Image() {
             <div className='overflow-hidden rounded-full self-center bg-red-700 border-solid p-5'>
               <img src={me} />
             </div>
-            <div className='absolute right-0 bottom-0 cursor-default'>
-              <p>Source: vecteezy.com</p>
+            <div className='absolute right-28 bottom-10 cursor-default'>
+              <p className='text-sm'>Source: vecteezy.com</p>
             </div>
         </div>
     )
