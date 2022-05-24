@@ -1,24 +1,31 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { UseChangeNavContext } from "../../hooks/NavHook";
 
 export default function NavLink({to, title, overmsg}) {
     const [hovering, flipHovering] = useState(false)
+    const change = UseChangeNavContext()
+    const hideNav = () => {
+        change(false);
+    }
     return(
         <div className="relative">
-        <Link to={to}>
-            <motion.div
-            onHoverEnd={() => flipHovering(false)}
-            onHoverStart={() => flipHovering(true)}
-            whileHover={{ scale: 1.02, backgroundColor: 'rgb(239, 68, 68)' }}
-            whileTap={{ scale: .99, backgroundColor: 'rgb(239, 68, 68)' }}
-            className='px-10 xsm:mr-2'
-            >
-                <div className="m-2 p-5 ">
-                    <h1 className="text-white text-4xl">{title}</h1>
-                </div>
-            </motion.div>
-        </Link>
+            <div onClick={hideNav}>
+                <Link to={to}>
+                    <motion.div
+                    onHoverEnd={() => flipHovering(false)}
+                    onHoverStart={() => flipHovering(true)}
+                    whileHover={{ scale: 1.02, backgroundColor: 'rgb(239, 68, 68)' }}
+                    whileTap={{ scale: .99, backgroundColor: 'rgb(239, 68, 68)' }}
+                    className='px-10 xsm:mr-2'
+                    >
+                        <div className="m-2 p-5 ">
+                            <h1 className="text-white text-4xl">{title}</h1>
+                        </div>
+                    </motion.div>
+                </Link>
+            </div>
             <AnimatePresence>
                 {hovering &&
                     <motion.div
