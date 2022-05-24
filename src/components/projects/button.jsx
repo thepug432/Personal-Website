@@ -7,8 +7,11 @@ export default function Button({url, title}) {
     }
 
     return(
-        <motion.div onClick={openlink}>
-            <button className="bg-red-700 rounded p-3 px-4 mx-2">{title}</button>
-        </motion.div>
+        <motion.button 
+            whileHover={{ scale: 1.1, backgroundColor: 'rgb(239, 68, 68)'}} 
+            onClick={openlink} 
+            className="bg-red-700 rounded p-3 px-4 mx-2">
+        {title}
+        </motion.button>
     )
 }
