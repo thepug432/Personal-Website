@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import Hider from "./Hider"
 import Image from './index/image'
 import Examples from './index/Example'
+import A from './index/A'
 
 export default function Idex() {
   return (
@@ -18,7 +19,7 @@ export default function Idex() {
           </div>
           {/* links */}
           <div className='flex ml-32 xsm:mt-10'>
-            <Examples to={'github'} title={'Github'}/>
+            <A to={'https://github.com/thepug432/'} title={'Github'}/>
             <Examples to={'projects'} title={'Projects'}/>
           </div>
         </div>
