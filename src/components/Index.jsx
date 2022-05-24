@@ -17,7 +17,7 @@ export default function Idex() {
             <Image/> 
           </div>
           {/* links */}
-          <div className='flex ml-16'>
+          <div className='flex ml-32 xsm:mt-10'>
             <Examples to={'github'} title={'Github'}/>
             <Examples to={'projects'} title={'Projects'}/>
           </div>
