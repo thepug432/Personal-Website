@@ -4,7 +4,7 @@ import Index from './components/Index'
 
 function App() {
   return (
-    <div>
+    <div className="bg-red-400">
       <Nav/>
       <Routes>
         <Route path="/" element={ <Index/> }/>

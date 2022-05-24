@@ -14,3 +14,14 @@
     border-right: 23vw solid transparent;
     border-bottom: 46.7vw solid red;
 }
+
+.back{
+    background-image: url('static/images/back.gif');
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
