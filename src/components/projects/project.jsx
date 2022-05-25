@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Button from "./button";
 
-export default function Project({ title, description, Sitelink, Githublink, image}) {
+export default function Project({ title, description, Sitelink, Githublink, image, features }) {
     const [hover, setHover] = useState(false)
 
     return(
@@ -24,6 +24,14 @@ export default function Project({ title, description, Sitelink, Githublink, imag
                             <div className="mx-auto p-3 rounded bg-red-700 mt-32 xsm:hidden">
                                 <h1 className="text-4xl">{title}</h1>
                                 <p className="mt-10">{description}</p>
+                                <p className="mt-1"><strong>Features:</strong></p>
+                                <ul className="pl-2">
+                                {features.map((feature) => {
+                                    return(
+                                        <li>{feature}</li>
+                                    )
+                                })}
+                                </ul>
                             </div>
                             <div className="mx-auto mt-2 flex xsm:m-auto">
                                 <Button url={Sitelink} title={'See Site'}/>

@@ -17,6 +17,7 @@ export default function Projects() {
                 image={WarframeSite}
                 Sitelink={'https://warframeparser.netlify.app/'}
                 Githublink={'https://github.com/thepug432/WarframeApiParser'}
+                features={['Minimize Data', 'Hide Data', 'Change Platforms (Stored Locally)', 'Error Checking On Data Fetching', 'Loading Screen While Fetching Data', 'Responsive']}
             />
             <Project
                 title={'United States Population Tracker'}
@@ -24,6 +25,7 @@ export default function Projects() {
                 image={UsStats}
                 Sitelink={'https://uspopulationtracker.netlify.app/'}
                 Githublink={'https://github.com/thepug432/USPopulation'}
+                features={['Dynamic Chart Creation Via API', 'Data For United States', 'Data By State', 'Responsive']}
             />
         </motion.div>
         </Hider>
