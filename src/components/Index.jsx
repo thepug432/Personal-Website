@@ -6,8 +6,13 @@ import A from './index/A'
 
 export default function Idex() {
   return (
-    <div className='back index h-screen-without-nav'>
-      <Hider>
+    <Hider>
+      <motion.div 
+      initial={{ opacity:0 }}
+      exit={{ opacity:0 }}
+      animate={{ opacity:1 }}
+      transition={{ duration:.3 }}
+      className='back index h-screen-without-nav'>
         <div className="flex flex-col">
           {/* main content */}
           <div className='flex xsm:flex-col mt-10 xsm:mt-5 xsm:mx-3 text-white'>
@@ -23,7 +28,7 @@ export default function Idex() {
             <Examples to={'projects'} title={'Projects'}/>
           </div>
         </div>
-      </Hider>
-    </div>
+      </motion.div>
+    </Hider>
     )
   }
