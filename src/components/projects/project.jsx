@@ -23,7 +23,7 @@ export default function Project({ title, description, Sitelink, Githublink, imag
                         >
                             <div className="mx-auto p-3 rounded bg-red-700 mt-32 xsm:hidden">
                                 <h1 className="text-4xl">{title}</h1>
-                                <p className="mt-10">{description}</p>
+                                <p className="mt-7">{description}</p>
                                 <p className="mt-1"><strong>Features:</strong></p>
                                 <ul className="pl-2">
                                 {features.map((feature) => {
