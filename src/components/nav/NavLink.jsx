@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { UseChangeNavContext } from "../../hooks/NavHook";
 
-export default function NavLink({to, title, overmsg}) {
+export default function NavLink({to, title, overmsg, download}) {
     const [hovering, flipHovering] = useState(false)
     const change = UseChangeNavContext()
     const hideNav = () => {

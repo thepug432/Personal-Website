@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import Project from "./projects/project"
 import WarframeSite from '../static/images/WarframeSite.png'
 import UsStats from '../static/images/USstats.png'
@@ -7,12 +7,7 @@ import Hider from "./Hider"
 export default function Projects() {
     return(
         <Hider>
-            <motion.div 
-            initial={{ opacity:0 }}
-            exit={{ opacity:0 }}
-            animate={{ opacity:1 }}
-            transition={{ duration:.3 }}
-            className="h-screen-without-nav bg-red-500 flex flex-col">
+            <div className="h-screen-without-nav bg-red-500 flex flex-col">
                 <Project 
                     title={'Warframe API Parser'}
                     description={'This project parses the warframe api using it to produce a website.'}
@@ -31,7 +26,7 @@ export default function Projects() {
                 />
                 <div className="bg-red-500 py-1">
                 </div>
-            </motion.div>
+            </div>
         </Hider>
     )
 }
