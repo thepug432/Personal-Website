@@ -11,6 +11,7 @@ export default function Resume() {
                     discription={'This is an introduction to the intellectual enterprises of computer science and the art of programming. The course covers C, SQL, Python, Javascript, HTML & CSS, and Web Development using Flask.'}
                     grade={'Completed with Verified Certificate'}
                     image={CS50X}
+                    url={'https://courses.edx.org/certificates/390fbc6b10a34b0e8fef28b735cad7f1'}
                 />
             </div>
         </div>
