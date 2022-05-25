@@ -29,6 +29,8 @@ export default function Projects() {
                     Githublink={'https://github.com/thepug432/USPopulation'}
                     features={['Dynamic Chart Creation Via API', 'Data For United States', 'Data By State', 'Responsive']}
                 />
+                <div className="bg-red-500 py-1">
+                </div>
             </motion.div>
         </Hider>
     )
