@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom"
 import Nav from './components/Nav'
 import Index from './components/Index'
 import Projects from "./components/projects"
-import Resume from './components/resume'
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Routes>
         <Route path="/" element={ <Index/> }/>
         <Route path="projects" element={ <Projects/> }/>
-        <Route path="resume" element={ <Resume/> }/>
       </Routes>
     </div>
   )

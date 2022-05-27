@@ -17,7 +17,7 @@ export default function NavMenu() {
                 animate={{ y: -0 }}
                 transition={{ delay: .3, duration: .3 }}>
                     <NavLink title={'Home'} to={'/'} overmsg={'Go home'}/>
-                    <NavLink title={'Resume'} to={'resume'} overmsg={'See my resume'}/>
+                    <A title={'Resume'} to={'https://docs.google.com/document/d/1cXHeyqrwwt5AOQMvzQOM5SWOsbVwC8WhoBldJNNg55Q/edit?usp=sharing'} overmsg={'See my resume'}/>
                     <NavLink title={'Projects'} to={'projects'} overmsg={'See my projects'}/>
                     <A title={'Github'} to={'https://github.com/thepug432/'} overmsg={'Go to my Github'}/>
                 </motion.div>
