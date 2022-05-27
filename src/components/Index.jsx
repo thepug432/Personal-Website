@@ -13,6 +13,7 @@ export default function Idex() {
             <div className='my-auto mx-16 bg-red-700 p-16 rounded-full'>
               <p className="text-4xl">Hi, I'm Kiril Bourakov.</p> <br/>
               <p className="text-xl">I design modern, responsive websites using React and other technologies.</p>
+              <p className="text-xl">I speak english (11 years), french (7 years), and russian (3 years)</p>
             </div>
             <Image/> 
           </div>
