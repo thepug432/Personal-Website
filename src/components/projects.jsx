@@ -1,13 +1,21 @@
-import { motion } from "framer-motion"
 import Project from "./projects/project"
 import WarframeSite from '../static/images/WarframeSite.png'
 import UsStats from '../static/images/USstats.png'
+import Sherrysite from '../static/images/sherry.png'
 import Hider from "./Hider"
 
 export default function Projects() {
     return(
         <Hider>
             <div className="h-screen-without-nav bg-red-500 flex flex-col">
+                <Project 
+                    title={'Sharry Pdf share'}
+                    description={'This is a fullstack webapp that lets users login/create accounts and share pdfs.'}
+                    image={Sherrysite}
+                    Sitelink={'https://sherry-pdf-share.netlify.app/'}
+                    Githublink={'https://github.com/thepug432/Sherry-filesharer'}
+                    features={['Login/Logout', 'Register', 'Upload and delete pdf', 'Make pdf public/private', 'Share pdf with specific user', 'Add, remove and edit tags', 'Search by title and tag']}
+                />
                 <Project 
                     title={'Warframe API Parser'}
                     description={'This project parses the warframe api using it to produce a website.'}
