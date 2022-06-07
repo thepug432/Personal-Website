@@ -16,7 +16,7 @@ export default function Projects() {
                     Githublink={'https://github.com/thepug432/Sherry-filesharer'}
                     features={['Login/Logout', 'Register', 'Upload and delete pdf', 'Make pdf public/private', 'Share pdf with specific user', 'Add, remove and edit tags', 'Search by title and tag']}
                 />
-                <Project 
+                <Project  
                     title={'Warframe API Parser'}
                     description={'This project parses the warframe api using it to produce a website.'}
                     image={WarframeSite}
