@@ -7,7 +7,7 @@ import Hider from "./Hider"
 export default function Projects() {
     return(
         <Hider>
-            <div className="h-screen-without-nav bg-red-500 flex flex-col">
+            <div className="h-screen-without-nav bg-gray-500 flex flex-col">
                 <Project 
                     title={'Sharry Pdf share'}
                     description={'This is a fullstack webapp that lets users login/create accounts and share pdfs.'}
@@ -32,7 +32,7 @@ export default function Projects() {
                     Githublink={'https://github.com/thepug432/USPopulation'}
                     features={['Dynamic Chart Creation Via API', 'Data For United States', 'Data By State', 'Responsive']}
                 />
-                <div className="bg-red-500 py-1">
+                <div className="bg-gray-500 py-1">
                 </div>
             </div>
         </Hider>

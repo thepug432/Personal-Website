@@ -10,8 +10,8 @@ export default function NavMenu() {
         exit={{x: screen.width*-1 }}
         initial={{ x: screen.width*-1 }}
         transition={{ duration: .3 }}
-        className="absolute bg-red-600/95 right-0 top-12 w-screen h-screen-without-nav flex xsm:block">
-            <div className="flex flex-col bg-red-700">
+        className="absolute bg-gray-600/95 right-0 top-12 w-screen h-screen-without-nav flex xsm:block">
+            <div className="flex flex-col bg-gray-700">
                 <motion.div 
                 initial={{ y: -300 }}
                 animate={{ y: -0 }}

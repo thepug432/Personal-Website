@@ -10,7 +10,7 @@ export default function Alert({ check, msg }) {
             exit={{ x:-10, opacity:0 }}
             animate={{ x:0, opacity:1 }}
             transition={{ duration: .3 }}
-            className="p-3 rounded-lg bg-red-800 mt-6 border border-black border-solid">
+            className="p-3 rounded-lg bg-gray-800 mt-6 border border-black border-solid">
                 <p className="text-center text-white">{msg}</p>
             </motion.div>
         }
