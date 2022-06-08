@@ -8,7 +8,7 @@ export default function Button({url, title}) {
 
     return(
         <motion.button 
-            whileHover={{ scale: 1.1, backgroundColor: 'rgb(239, 68, 68)'}} 
+            whileHover={{ scale: 1.1, backgroundColor: 'rgb(203, 213, 225)', color: 'black'}} 
             onClick={openlink} 
             className="bg-gray-700 rounded p-3 px-4 mx-2">
         {title}
