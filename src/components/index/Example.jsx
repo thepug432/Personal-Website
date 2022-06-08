@@ -12,7 +12,7 @@ export default function Example({to, title}) {
         <div onClick={hideNav}>
             <Link to={to}>
                 <motion.div 
-                whileHover={{ scale:1.1, backgroundColor: 'rgb(239, 68, 68)' }}
+                whileHover={{ scale:1.1, backgroundColor: 'rgb(203, 213, 225)', color: 'black' }}
                 className="text-white bg-gray-600 p-3 rounded ml-2">
                     <button>{title}</button>   
                 </motion.div>
