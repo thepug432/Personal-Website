@@ -6,7 +6,7 @@ export default function Project({ title, description, Sitelink, Githublink, imag
     const [hover, setHover] = useState(false)
 
     return(
-        <div className="mt-2 text-white flex px-5 bg-gray-500">
+        <div className="mt-2 text-white flex px-5 bg-gray-700">
             <div className="mx-auto relative"
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
@@ -21,7 +21,7 @@ export default function Project({ title, description, Sitelink, Githublink, imag
                             transition={{ duration:.3 }}
                             className="absolute top-0 left-0 w-full h-full bg-white/50 flex flex-col"
                         >
-                            <div className="mx-auto p-3 rounded bg-gray-700 mt-32 xsm:hidden">
+                            <div className="mx-auto p-3 rounded bg-gray-900 mt-32 xsm:hidden">
                                 <h1 className="text-4xl">{title}</h1>
                                 <p className="mt-7">{description}</p>
                                 <p className="mt-1"><strong>Features:</strong></p>

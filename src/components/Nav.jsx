@@ -7,7 +7,7 @@ export default function Nav() {
     const SeeNav = UseNavContext()
     const ChangeSeeNav = UseChangeNavContext()
     return(
-        <nav className="flex p-3 bg-gray-700 relative">
+        <nav className="flex p-3 bg-gray-900 relative">
             <NavButton open={SeeNav} changeOpen={ChangeSeeNav}/>
             <AnimatePresence>
                 {SeeNav &&

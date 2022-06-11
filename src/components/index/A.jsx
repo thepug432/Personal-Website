@@ -13,7 +13,7 @@ export default function Example({to, title}) {
             <a href={to} target="_blank">
                 <motion.div 
                 whileHover={{ scale:1.1, backgroundColor: 'rgb(203, 213, 225)', color: 'black' }}
-                className="text-white bg-gray-600 p-3 rounded ml-2">
+                className="text-white bg-gray-900 p-3 rounded ml-2">
                     <button>{title}</button>   
                 </motion.div>
             </a>

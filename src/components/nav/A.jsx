@@ -31,10 +31,10 @@ export default function A({to, title, overmsg}) {
                     animate={{ scale: 1, opacity:1 }}
                     exit={{ scale: .5, opacity:0 }}
                     initial={{ scale: .5, opacity:0 }}
-                    className="absolute left-72 top-5 bg-gray-800 p-3 px-5 rounded w-40 text-white xsm:hidden"
+                    className="absolute left-72 top-5 bg-gray-900 p-3 px-5 rounded w-40 text-white xsm:hidden"
                     >
                         <div className="absolute right-40 top-3 w-4 overflow-hidden inline-block">
-                            <div className="h-16 bg-gray-800 -rotate-45 transform origin-top-right"></div>
+                            <div className="h-16 bg-gray-900 -rotate-45 transform origin-top-right"></div>
                         </div>
                         <h1>{overmsg}</h1>
                     </motion.div>  
