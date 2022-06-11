@@ -13,7 +13,7 @@ export default function Skills() {
               <div className='flex justify-center'>
                 <div className='grid grid-rows-2 grid-flow-col gap-4'>
                   {skills.map(item => 
-                    <GridItem text={item} />
+                    <GridItem text={item} key={item}/>
                   )}
                 </div>
             </div>

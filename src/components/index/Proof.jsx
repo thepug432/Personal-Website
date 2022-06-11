@@ -1,5 +1,7 @@
 import Example from "./Example"
+import Header from "./Header"
 import A from './A'
+import {FaQuestion} from 'react-icons/fa'
 
 export default function Proof() {
     return(
@@ -10,7 +12,7 @@ export default function Proof() {
             </div>
             <div className='flex justify-center'>
                 <div className='grid grid-rows-1 grid-flow-col gap-4'>
-                  <Examples to={'projects'} title={'See my projects'}/>
+                  <Example to={'projects'} title={'See my projects'}/>
                   <A to={'https://github.com/thepug432/'} title={'Visit my Github'}/>
                   <A to={'https://docs.google.com/document/d/1cXHeyqrwwt5AOQMvzQOM5SWOsbVwC8WhoBldJNNg55Q/edit?usp=sharing'} title={'See my resume'}/>
                 </div>

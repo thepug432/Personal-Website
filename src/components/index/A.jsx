@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { UseChangeNavContext } from "../../hooks/NavHook";
 
-export default function Example({to, title}) {
+export default function A({to, title}) {
     const change = UseChangeNavContext()
     const hideNav = () => {
         change(false);

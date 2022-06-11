@@ -1,12 +1,9 @@
 import {BsFillHddStackFill} from 'react-icons/bs'
-
-import Examples from './index/Example'
-import A from './index/A'
-import Header from './index/Header'
 import Hider from './Hider'
 import Frontend from './index/Frontend'
 import Backend from './index/Backend'
 import Skills from './index/Skills'
+import Proof from './index/Proof'
 
 export default function Idex() {
 

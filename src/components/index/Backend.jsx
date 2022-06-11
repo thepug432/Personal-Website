@@ -1,7 +1,6 @@
-import {GoServer} from 'react-icons/go'
+import { GoServer } from 'react-icons/go'
 import GridItem from './GridItem'
 import Header from "./Header"
-import FaQuestion from 'react-icons/fa'
 
 export default function Backend() {
     const backend = ['Django', 'Django REST', 'DJ-all-auth', 'SQL', 'Working wth database', 'Server security']
@@ -14,7 +13,7 @@ export default function Backend() {
               <div className='flex justify-center'>
                 <div className='grid grid-rows-2 grid-flow-col gap-4'>
                   {backend.map(item => 
-                    <GridItem text={item} />
+                    <GridItem text={item} key={item}/>
                   )}
                 </div>
               </div>

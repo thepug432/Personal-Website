@@ -13,7 +13,7 @@ export default function Frontend() {
             <div className='flex justify-center'>
             <div className='grid grid-rows-3 grid-flow-col gap-4'>
                 {frontend.map(item => 
-                <GridItem text={item} />
+                <GridItem text={item} key={item}/>
                 )}
             </div>
             </div>
